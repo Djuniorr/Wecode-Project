@@ -10,6 +10,8 @@
   body{
     background-color: #F3F3F3;
   }
+
+  /* MENU ESQUERDO */
   .sidepanel  {
     width: 0;
   position: fixed;
@@ -135,29 +137,6 @@ color: #EEFF49;
   
 }
   
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: rgba(red, green, blue, alpha);
-  padding: 10px 15px;
-  border: none;
-  padding-right: 1em;
-}
-  
-.openbtn:hover {
-  background-color:#444;
-}
-  
-.nav{
-  background-color: #111;
-  display: flex;
-  position: fixed;
-  z-index: 1;
-  width:100%;
-  height: 70px;
-}
-  
 .sidepanel a {
   display: flex;
   color: white;
@@ -201,6 +180,32 @@ color: #EEFF49;
   padding-top: 0.14em;
 }
 
+/* NAVBAR */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: rgba(red, green, blue, alpha);
+  padding: 10px 15px;
+  border: none;
+  padding-right: 1em;
+}
+  
+.openbtn:hover {
+  background-color:#444;
+}
+  
+.nav{
+  background-color: #111;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  height: 70px;
+}
+  
+
+
 .dropdown-container {
   display: none;
   background-color: #262626;
@@ -234,6 +239,51 @@ color: #EEFF49;
   top: 26%;
   left: 92%;
 }
+
+.search-bar {
+  display: none;
+  position: relative;
+  top: 4.3em;
+  right: 5em;
+  background-color: #111;
+  width: 600px;
+  height: 4em;
+  border-radius: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 85%;
+  top: 35%;
+}
+
+.search-icon:hover+.search-bar {
+  display: block;
+}
+
+.search-bar:hover {
+  display: block;
+}
+
+.pesquisa{
+  display: flex;
+  position: absolute;
+  background-color: #ffffff;
+  width: 600px;
+  left:2em;
+  height: 50%;
+  top: 1em;
+}
+
+.search {
+  list-style: none;
+  padding: 0;
+  width: fit-content;
+  /*border added to visualise collision box*/
+}
+
+
+/* CARROUSEL */
 .show {display: block;}
 
 .slideshow-container {
@@ -265,6 +315,7 @@ color: #EEFF49;
   border-radius: 3px 0 0 3px;
 }
 
+/* DEPARTAMENTOS */
 
 
 .departamentos {
@@ -279,10 +330,6 @@ color: #EEFF49;
 
 }
 
-.container-produto{
-  padding: 0em 0em 1.3em 0em;
-}
-
 
 .legenda {
   position: absolute;
@@ -291,6 +338,12 @@ color: #EEFF49;
   padding-top: 4.5em;
   padding-left: 3em;
   color: #ffffff;
+}
+
+/* PRODUTOS */
+
+.container-produto{
+  padding: 0em 0em 1.3em 0em;
 }
 
 .texto-produto  {
@@ -345,6 +398,8 @@ color: #EEFF49;
   
 }
 
+/* CORPO IMAGEM */
+
 .container-corpo {
   flex-direction: column ;
   padding: 0em 0em 0em 0em;
@@ -380,10 +435,7 @@ color: #EEFF49;
   padding: 0 0 1em 0;
 }
 
-
-.container-selecionador{
-  padding: 0 0 1.3em 0;
-}
+/* SELECIONADOS */
 
 .textp {
   top: 1px;
@@ -497,6 +549,17 @@ color: #EEFF49;
   color: #EEFF49;
 }
 
+/* IMAGEM */
+
+.elemento3 {
+  height: 100%;
+  width: 100%;
+  padding: 1.3em 0em 1.3em 0em;
+}
+
+
+/* LANÇAMENTO */
+
 #lançamento {
   top: 363px;
   left: 45px;
@@ -565,12 +628,7 @@ color: #EEFF49;
   left:50.5em;
 }
 
-.elemento3 {
-  height: 100%;
-  width: 100%;
-  padding: 1.3em 0em 1.3em 0em;
-}
-
+/* FOOTER */
 
 .slider-footer {
   background-color: #F8F8F8;
@@ -727,6 +785,9 @@ li {
   color: #FFFFFF;
 }
 
+
+/* CERTIFICADOS */
+
 .container-certificados {
   height: 119px;
 }
@@ -746,6 +807,8 @@ li {
 .text-selos {
   color: #232323;
 }
+
+/* WECODE FOOTER */
 
 .wecode-footer {
   height: 119px;
@@ -780,23 +843,7 @@ li {
   flex-grow: 0;
  }
 
-.vtexwecode {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  background-color: #142032 ;
-  height: 40px;
- }
-.iconvtex {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-
-.container-faq{
+ .container-faq{
   width: 90%;
   height: 100%;
   padding-left: 1em;
@@ -850,45 +897,25 @@ details[open] div{
 }
 
 
-.search {
-  list-style: none;
-  padding: 0;
-  width: fit-content;
-  /*border added to visualise collision box*/
-}
+ /* VTEXWECODE */
 
-.search-bar {
-  display: none;
-  position: relative;
-  top: 4.3em;
-  right: 5em;
-  background-color: #111;
-  width: 600px;
-  height: 4em;
-  border-radius: 5px;
-}
-
-.search-icon {
-  position: absolute;
-  left: 85%;
-  top: 35%;
-}
-
-.search-icon:hover+.search-bar {
-  display: block;
-}
-
-.search-bar:hover {
-  display: block;
-}
-
-.pesquisa{
+.vtexwecode {
   display: flex;
-  position: absolute;
-  background-color: #ffffff;
-  width: 600px;
-  left:2em;
-  height: 50%;
-  top: 1em;
+  padding: 0;
+  margin: 0;
+  background-color: #142032 ;
+  height: 40px;
+ }
+.iconvtex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+
+
+
+
 

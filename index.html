@@ -1,496 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wecode Project</title>
-    <link rel="icon" type="image/x-icon" href="/favicon_io/favicon-32x32.png">
-    <!--Css-->
-    <link rel="stylesheet" href="/src/styles.css">
-    <!--IMPORT-->
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
-
-  <style>
-
-  </style>
-</head>
-<body>
-
-    <!--MENU ESQUERDO-->
-    
-        <div id="mySidepanel" class="sidepanel">
-            <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wecode Project</title>
+      <link rel="icon" type="image/x-icon" href="/favicon_io/favicon-32x32.png">
+      <!--Css-->
+      <link rel="stylesheet" href="/src/styles.css">
+      <!--IMPORT-->
+      <script src="/src/script.js"></script>
+   </head>
+   <body>
+      <!--MENU ESQUERDO-->
+      <div id="mySidepanel" class="sidepanel">
+         <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×
             </a>
-            <div class="retang"></div><div class="ola">Olá,</div>
-            <div class="retang2"></div><div class="usuario">Usuário</div>
+            <div class="retang"></div>
+            <div class="ola">Olá,</div>
+            <div class="retang2"></div>
+            <div class="usuario">Usuário</div>
+         </div>
+         <!-- FIRST TAB -->
+         <div class="tab">
+            <input id="tab-1" type="checkbox" >
+            <label for="tab-1">
+               <div class="dp1">
+                  <a class="textdp">Departamento 1</a>
+               </div>
+            </label>
+            <div class="content">
+               <p>Categoria 1</p>
+               <p>Categoria 2</p>
+               <p>Categoria 3</p>
             </div>
-
-            <!-- FIRST TAB -->
-            <div class="tab">
-                <input id="tab-1" type="checkbox" >
-                <label for="tab-1">
-                    <div class="dp1">
-                        <a class="textdp">Departamento 1</a>
-                    </div>
-                </label>
-                <div class="content">
-                    <p>Categoria 1</p>
-                    <p>Categoria 2</p>
-                    <p>Categoria 3</p>
-                </div>
+         </div>
+         <!-- SECOND TAB -->
+         <div class="tab">
+            <input id="tab-2" type="checkbox" >
+            <label for="tab-2">
+               <div class="dp2">
+                  <a class="textdp">Departamento 2</a>
+               </div>
+            </label>
+            <div class="content">
+               <p>Categoria 1</p>
+               <p>Categoria 2</p>
+               <p>Categoria 3</p>
             </div>
-            
-            <!-- SECOND TAB -->
-            <div class="tab">
-                <input id="tab-2" type="checkbox" >
-                <label for="tab-2">
-                    <div class="dp2">
-                        <a class="textdp">Departamento 2</a>
-                    </div>
-                </label>
-                <div class="content">
-                    <p>Categoria 1</p>
-                    <p>Categoria 2</p>
-                    <p>Categoria 3</p>
-                </div>
-            </div>
-            
-              
-            <a class="dp3">Departamento 3</a>
-            <a class="dp4">Departamento 4</a>
-            <a class="dp5"><p>Departamento 5</p></a>
-            <a class="dp6"><p>Departamento 6</p></a>
-            <a class="sair"><p>Sair</p><img src="/icons/sair.svg" alt="" id="sair"></a>
-        </div>
-
-
-    <!--NAVBAR--> 
-
-      <div class="nav">
-            <button class="openbtn" onclick="openNav()"><img src="/icons/icon-header-menu.svg" alt=""></button>
-            <div class="wecode-header"></div>
-            <div class="shop-header"><img src="/icons/icon-header-carrinho.svg" alt=""></div>
-            <ul class="search">
-                <li class="search-icon"><img src="/icons/icon-header-search.svg" alt=""></li>
-                <li class="search-bar">
-                    <input placeholder="" action="" class="pesquisa">
-                </li>
-              </ul>
+         </div>
+         <a class="dp3">Departamento 3</a>
+         <a class="dp4">Departamento 4</a>
+         <a class="dp5">
+            <p>Departamento 5</p>
+         </a>
+         <a class="dp6">
+            <p>Departamento 6</p>
+         </a>
+         <a class="sair">
+            <p>Sair</p>
+            <img src="/icons/sair.svg" alt="" id="sair">
+         </a>
       </div>
-      
-    <!--CARROUSEL-->   
-
-            <div class="slideshow-container">
-        
-                <div class="mySlides fade">
-                <img src="/img/Banner-home-principal-1.png" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                <img src="/img/Banner-home-principal-2.png" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                <img src="/img/Banner-home-principal-3.png" style="width:100%">
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-       
-    <!--DEPARTAMENTOS-->
-
-        <div class="departamentos">
-            <div>
-                <p class="legenda">Departamento 1</p>
-                <div class="img"><img  src="/img/Banner-home-departamento-1.png" alt="" ></div>
-            </div>
-            <div >
-                <p class="legenda">Departamento 2</p>
-                <div class="img"><img  src="/img/Banner-home-departamento-2.png" alt="" ></div>
-            </div>
-                <div >
-                <p class="legenda">Departamento 3</p>
-                <div><img class="img" src="/img/Banner-home-departamento-3.png" alt="" ></div>
-            </div>
-            <div >
-                <p class="legenda">Departamento 4</p>
-                <div><img class="img" src="/img/Banner-home-departamento-4.png" alt="" ></div>
-            </div>
-            <div >
-                    <p class="legenda">Departamento 5</p>
-                <div><img class="img" src="/img/Banner-home-departamento-5.png" alt="" ></div>
-            </div>
-            <div >
-                <p class="legenda">Departamento 6</p>
-                <div><img class="img" src="/img/Banner-home-departamento-6.png" alt="" ></div>
-            </div>
-        </div>
-    <!--PRODUTOS-->
-
-    <div class="container-produto">
-        <div >
+      <!--NAVBAR--> 
+      <div class="nav">
+         <button class="openbtn" onclick="openNav()"><img src="/icons/icon-header-menu.svg" alt=""></button>
+         <div class="wecode-header"></div>
+         <div class="shop-header"><img src="/icons/icon-header-carrinho.svg" alt=""></div>
+         <ul class="search">
+            <li class="search-icon"><img src="/icons/icon-header-search.svg" alt=""></li>
+            <li class="search-bar">
+               <input placeholder="" action="" class="pesquisa">
+            </li>
+         </ul>
+      </div>
+      <!--CARROUSEL-->   
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+            <img src="/img/Banner-home-principal-1.png" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="/img/Banner-home-principal-2.png" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="/img/Banner-home-principal-3.png" style="width:100%">
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+      </div>
+      <!--DEPARTAMENTOS-->
+      <div class="departamentos">
+         <div>
+            <p class="legenda">Departamento 1</p>
+            <div class="img"><img  src="/img/Banner-home-departamento-1.png" alt="" ></div>
+         </div>
+         <div >
+            <p class="legenda">Departamento 2</p>
+            <div class="img"><img  src="/img/Banner-home-departamento-2.png" alt="" ></div>
+         </div>
+         <div >
+            <p class="legenda">Departamento 3</p>
+            <div><img class="img" src="/img/Banner-home-departamento-3.png" alt="" ></div>
+         </div>
+         <div >
+            <p class="legenda">Departamento 4</p>
+            <div><img class="img" src="/img/Banner-home-departamento-4.png" alt="" ></div>
+         </div>
+         <div >
+            <p class="legenda">Departamento 5</p>
+            <div><img class="img" src="/img/Banner-home-departamento-5.png" alt="" ></div>
+         </div>
+         <div >
+            <p class="legenda">Departamento 6</p>
+            <div><img class="img" src="/img/Banner-home-departamento-6.png" alt="" ></div>
+         </div>
+      </div>
+      <!--PRODUTOS-->
+      <div class="container-produto">
+         <div >
             <p class="texto-produto">Produtos mais vendidos</p>
-        </div>
-        <div class="slider" id="slider">
+         </div>
+         <div class="slider" id="slider">
             <div class="slide" id="slide">
-              <div>
-                <p class="textp">
-                    <span>Copo de Mocaccino Medio - 550ml </span>
-                    <p class="price">R$ 12</span>
-                    <p class="priced">R$ 9,50</p>
-                </p>
-                <div id="lançamento"><p class="lançamento">Lançamento</p></div>
-                <img class="icon" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                <img class="item" src="/img/Imagem-home-produto-1.png">
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Medio - 550ml </span>
+                  <p class="price">R$ 12</span>
+                  <p class="priced">R$ 9,50</p>
+                  </p>
+                  <div id="lançamento">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-1.png">
+               </div>
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Pequeno - 350ml </span>
+                  <p class="price2">R$ 9</span>
+                  <p class="priced2">R$ 7,50</p>
+                  </p>
+                  <div id="lançamento2">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon2" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-2.png">
+               </div>
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Grande - 750ml </span>
+                  <p class="price3">R$ 16</span>
+                  <p class="priced3">R$ 12,50</p>
+                  </p>
+                  <div id="lançamento3">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon3" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-3.png">
+               </div>
             </div>
-              <div>
-                <p class="textp">
-                    <span>Copo de Mocaccino Pequeno - 350ml </span>
-                    <p class="price2">R$ 9</span>
-                    <p class="priced2">R$ 7,50</p>
-                </p>
-                <div id="lançamento2"><p class="lançamento">Lançamento</p></div>
-                <img class="icon2" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                <img class="item" src="/img/Imagem-home-produto-2.png">
+         </div>
+      </div>
+      <!--CORPO-->
+      <div class="container-corpo">
+         <div class="container-img">
+            <div id="elemento1">
+               <div>
+                  <a class="te1">Saiba mais!</a>
+               </div>
+               <img src="/img/Banner-home-corpo-1.png" alt=""  class="elemento1">
             </div>
-              <div>
-                <p class="textp">
-                    <span>Copo de Mocaccino Grande - 750ml </span>
-                    <p class="price3">R$ 16</span>
-                    <p class="priced3">R$ 12,50</p>
-                </p>
-                <div id="lançamento3"><p class="lançamento">Lançamento</p></div>
-                <img class="icon3" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                <img class="item" src="/img/Imagem-home-produto-3.png">
+            <div>
+               <a class="te2">Aproveite agora!</a>
+            </div >
+            <img src="/img/Banner-home-corpo-2.png" alt="" class="elemento2">
+         </div>
+      </div>
+      <!--SELECIONADOS-->
+      <div class="container-selecionados">
+         <div >
+            <p class="texto-produto">Selecionado por nós</p>
+         </div>
+         <div class="slider" id="slider">
+            <div class="slide" id="slide">
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Medio - 550ml </span>
+                  <p class="price">R$ 12</span>
+                  <p class="priced">R$ 9,50</p>
+                  </p>
+                  <div id="lançamento">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-1.png">
+               </div>
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Pequeno - 350ml </span>
+                  <p class="price2">R$ 9</span>
+                  <p class="priced2">R$ 7,50</p>
+                  </p>
+                  <div id="lançamento2">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon2" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-2.png">
+               </div>
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Grande - 750ml </span>
+                  <p class="price3">R$ 16</span>
+                  <p class="priced3">R$ 12,50</p>
+                  </p>
+                  <div id="lançamento3">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon3" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-3.png">
+               </div>
             </div>
-          </div>
-     </div>
-    </div>
-    <!--CORPO-->
-
-    <div class="container-corpo">
-        <div class="container-img">
-                <div id="elemento1">
-                    <div>
-                        <a class="te1">Saiba mais!</a>
-                    </div> 
-                    <img src="/img/Banner-home-corpo-1.png" alt=""  class="elemento1">
-                </div>
-                <div>
-                    <a class="te2">Aproveite agora!</a>
-                </div > 
-                 <img src="/img/Banner-home-corpo-2.png" alt="" class="elemento2">
-        </div>    
-     </div>
-    <!--SELECIONADOS-->
-
-            <div class="container-selecionados">
-                    <div >
-                <p class="texto-produto">Selecionado por nós</p>
-                </div>
-                <div class="slider" id="slider">
-                <div class="slide" id="slide">
-                <div>
-                    <p class="textp">
-                        <span>Copo de Mocaccino Medio - 550ml </span>
-                        <p class="price">R$ 12</span>
-                        <p class="priced">R$ 9,50</p>
-                    </p>
-                    <div id="lançamento"><p class="lançamento">Lançamento</p></div>
-                    <img class="icon" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                    <img class="item" src="/img/Imagem-home-produto-1.png">
-                </div>
-                <div>
-                    <p class="textp">
-                        <span>Copo de Mocaccino Pequeno - 350ml </span>
-                        <p class="price2">R$ 9</span>
-                        <p class="priced2">R$ 7,50</p>
-                    </p>
-                    <div id="lançamento2"><p class="lançamento">Lançamento</p></div>
-                    <img class="icon2" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                    <img class="item" src="/img/Imagem-home-produto-2.png">
-                </div>
-                <div>
-                    <p class="textp">
-                        <span>Copo de Mocaccino Grande - 750ml </span>
-                        <p class="price3">R$ 16</span>
-                        <p class="priced3">R$ 12,50</p>
-                    </p>
-                    <div id="lançamento3"><p class="lançamento">Lançamento</p></div>
-                    <img class="icon3" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                    <img class="item" src="/img/Imagem-home-produto-3.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--IMAGENS-->
-
-    <div class="container-image">
-        <div>
+         </div>
+      </div>
+      <!--IMAGENS-->
+      <div class="container-image">
+         <div>
             <a class="te1">Saiba mais!</a>
-        </div> 
-        <img src="/img/Banner-home-corpo-1.png" alt="" class="elemento3">
-    </div>
-
-
-
-
-        <!--EXCLUSIVOS-->
-
-            <div class="container-exclusivos">
-                <div >
-                    <p class="texto-produto">Exclusivos da loja online</p>
-                    </div>
-                <div class="slider" id="slider">
-                    <div class="slide" id="slide">
-                        <div>
-                        <p class="textp">
-                        <span>Copo de Mocaccino Medio - 550ml </span>
-                        <p class="price">R$ 12</span>
-                        <p class="priced">R$ 9,50</p>
-                        </p>
-                        <div id="lançamento"><p class="lançamento">Lançamento</p></div>
-                        <img class="icon" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                        <img class="item" src="/img/Imagem-home-produto-1.png">
-                    </div>
-                <div>
-                        <p class="textp">
-                        <span>Copo de Mocaccino Pequeno - 350ml </span>
-                        <p class="price2">R$ 9</span>
-                        <p class="priced2">R$ 7,50</p>
-                        </p>
-                        <div id="lançamento2"><p class="lançamento">Lançamento</p></div>
-                        <img class="icon2" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                        <img class="item" src="/img/Imagem-home-produto-2.png">
-                    </div>
-                    <div>
-                        <p class="textp">
-                        <span>Copo de Mocaccino Grande - 750ml </span>
-                        <p class="price3">R$ 16</span>
-                        <p class="priced3">R$ 12,50</p>
-                        </p>
-                        <div id="lançamento3"><p class="lançamento">Lançamento</p></div>
-                        <img class="icon3" src="/icons/icon-home-carddeproduto-addtocart.svg">
-                        <img class="item" src="/img/Imagem-home-produto-3.png">
-                </div>
+         </div>
+         <img src="/img/Banner-home-corpo-1.png" alt="" class="elemento3">
+      </div>
+      <!--EXCLUSIVOS-->
+      <div class="container-exclusivos">
+         <div >
+            <p class="texto-produto">Exclusivos da loja online</p>
+         </div>
+         <div class="slider" id="slider">
+            <div class="slide" id="slide">
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Medio - 550ml </span>
+                  <p class="price">R$ 12</span>
+                  <p class="priced">R$ 9,50</p>
+                  </p>
+                  <div id="lançamento">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-1.png">
+               </div>
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Pequeno - 350ml </span>
+                  <p class="price2">R$ 9</span>
+                  <p class="priced2">R$ 7,50</p>
+                  </p>
+                  <div id="lançamento2">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon2" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-2.png">
+               </div>
+               <div>
+                  <p class="textp">
+                     <span>Copo de Mocaccino Grande - 750ml </span>
+                  <p class="price3">R$ 16</span>
+                  <p class="priced3">R$ 12,50</p>
+                  </p>
+                  <div id="lançamento3">
+                     <p class="lançamento">Lançamento</p>
+                  </div>
+                  <img class="icon3" src="/icons/icon-home-carddeproduto-addtocart.svg">
+                  <img class="item" src="/img/Imagem-home-produto-3.png">
+               </div>
             </div>
+         </div>
+         <!--FOOTER-->
+         <div class="footer">
+         </div>
+         <div class="slider-footer" id="slider-footer">
+            <div class="slide-footer" id="slide-footer">
+               <div class="itens1">
+                  <img class="ics"  src="/icons/icon-footer-card.svg">
+                  <a class="icon-text1">Até 12 vezes sem 
+                  juros</a>
+               </div>
+               <div class="itens2">
+                  <img class="ics" src="/icons/icon-footer-locker.svg">
+                  <a class="icon-text2">Compra 100% segura</a>
+               </div>
+               <div class="itens3">
+                  <img class="ics" src="/icons/icon-footer-box.svg">
+                  <a class="icon-text3">Produtos de alta qualidade</a>
+               </div>
+               <div class="itens4">
+                  <img class="ics" src="/icons/icon-footer-pix.svg">
+                  <a class="icon-text4">5% de desconto no PIX</a>
+               </div>
             </div>
-
-
-
-    <!--FOOTER-->
-
-    <div class="footer">
-        </div>
-        <div class="slider-footer" id="slider-footer">
-        <div class="slide-footer" id="slide-footer">
-            <div class="itens1">
-                <img class="ics"  src="/icons/icon-footer-card.svg">
-                <a class="icon-text1">Até 12 vezes sem 
-                juros</a>
+         </div>
+         <!--FOOTER INICIAL-->
+         <div class="container-footer">
+            <div class="logo-wecode-footer">
+               <img src="/icons/logo-header-wecode.svg" alt="" class="logo-wecode-footer">
             </div>
-            <div class="itens2">
-                <img class="ics" src="/icons/icon-footer-locker.svg">
-                <a class="icon-text2">Compra 100% segura</a>
+            <div class="newsletter">
+               <p id="newsletter">Newsletter</p>
+               <div class="divider">
+               </div>
             </div>
-            <div class="itens3">
-                <img class="ics" src="/icons/icon-footer-box.svg">
-                <a class="icon-text3">Produtos de alta qualidade</a>
-                </div>
-            <div class="itens4">
-                <img class="ics" src="/icons/icon-footer-pix.svg">
-                <a class="icon-text4">5% de desconto no PIX</a>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--FOOTER INICIAL-->
-
-    <div class="container-footer">
-        <div class="logo-wecode-footer">
-            <img src="/icons/logo-header-wecode.svg" alt="" class="logo-wecode-footer">
-        </div>
-        <div class="newsletter">
-            <p id="newsletter">Newsletter</p>
-            <div class="divider">
-            </div>
-         </div> 
             <p class="novidades">Receba nossas novidades e ofertas através da<br>nossa newsletter</p>
-                   
             <div class="button">
-                <label for="email"><input id="email" type="email" required placeholder="  Digite seu e-mail"  class="caixa"/></label>
-                <button class="submit"><img src="/icons/icon-footer-mail.svg" alt="" class="icon-submit"></button>
+               <label for="email"><input id="email" type="email" required placeholder="  Digite seu e-mail"  class="caixa"/></label>
+               <button class="submit"><img src="/icons/icon-footer-mail.svg" alt="" class="icon-submit"></button>
             </div>
             <div class="rd">
-                <p>Siga nossas redes sociais</p>  
-                <div class="divider2"></div>
+               <p>Siga nossas redes sociais</p>
+               <div class="divider2"></div>
             </div>
-                
-                <div class="rede-sociais">
-                    <img src="/icons/icon-footer-instagram.svg" alt="" id="instagram">
-                    <img src="/icons/icon-footer-twitter.svg" alt="" id="twitter">
-                    <img src="/icons/icon-footer-facebook.svg" alt="" id="facebook">
-                </div>
-                <div class="container-faq">
-                  <details>
+            <div class="rede-sociais">
+               <a href="https://www.instagram.com/wecode.digital/"><img src="/icons/icon-footer-instagram.svg" alt="" id="instagram"></a>
+               <a href=""><img src="/icons/icon-footer-twitter.svg" alt="" id="twitter"></a>
+               <a href="https://www.facebook.com/wecode.digital"><img src="/icons/icon-footer-facebook.svg" alt="" id="facebook"></a>
+            </div>
+            <div class="container-faq">
+               <details>
                   <summary>Sobre nós</summary>
                   <div>
-                    <p>Quem somos nós</p>
-                    <br>
-                    <p>Nosso grupo</p>
+                     <p>Quem somos nós</p>
+                     <br>
+                     <p>Nosso grupo</p>
                   </div>
-                </details>
-                </div>
-                <div class="container-faq">
-                  <details>
+               </details>
+            </div>
+            <div class="container-faq">
+               <details>
                   <summary>Minha conta</summary>
                   <div>
-                      <p>Meu perfil</p>
-                      <br>
-                      <p>Meus pedidos</p>
+                     <p>Meu perfil</p>
+                     <br>
+                     <p>Meus pedidos</p>
                   </div>
-                </details>
-                </div>
-                <div class="container-faq">
-                  <details>
+               </details>
+            </div>
+            <div class="container-faq">
+               <details>
                   <summary>Políticas</summary>
                   <div>
-                      <p>Políticas de trocas e devolução</p>
-                      <br>
-                      <p>Políticas de Privacidade</p>
-                      <br>
-                      <p>Termos de Uso</p>
+                     <p>Políticas de trocas e devolução</p>
+                     <br>
+                     <p>Políticas de Privacidade</p>
+                     <br>
+                     <p>Termos de Uso</p>
                   </div>
-                </details>
-                </div>
-                <div class="container-faq">
-                  <details>
+               </details>
+            </div>
+            <div class="container-faq">
+               <details>
                   <summary>Contato</summary>
                   <div>
-                    <p>Tel.: (54)3028-9452 </p>
-                    <br>
-                    <p>Rua Plácido de Castro, 1063 - Sala 403 - <br>Exposição, Caxias do Sul - RS, 95084-370.</p>
+                     <p>Tel.: (54)3028-9452 </p>
+                     <br>
+                     <p>Rua Plácido de Castro, 1063 - Sala 403 - <br>Exposição, Caxias do Sul - RS, 95084-370.</p>
                   </div>
-                </details>
-                </div>      
-      </div>
-
-
-
-    <!--CERTIFICADOS-->
-
-        <div class="container-certificados">
+               </details>
+            </div>
+         </div>
+         <!--CERTIFICADOS-->
+         <div class="container-certificados">
             <div class="selos">
-                <a class="text-selos">Certificados & Selos</b></a>
-                <img src="/icons/icon-footer-selo.svg" class="icon-selos">
+               <a class="text-selos">Certificados & Selos</b></a>
+               <img src="/icons/icon-footer-selo.svg" class="icon-selos">
             </div>
-
-        </div>
-
-
-
-
-    <!--WECODE FOOTER-->    
-
-    <div class="wecode-footer">
+         </div>
+         <!--WECODE FOOTER-->    
+         <div class="wecode-footer">
             <div class="wecode">
-                <img src="/icons/icon-footer-logotype.svg" alt="">
-                <div class="text-wecode"><p>© 2021 wecode.digital - e-commerce technology. Todos os direitos reservados.
-                    Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias do Sul - RS, 95084-370 Telefone: (54) 3028-9452</p></div>
+               <img src="/icons/icon-footer-logotype.svg" alt="">
+               <div class="text-wecode">
+                  <p>© 2021 wecode.digital - e-commerce technology. Todos os direitos reservados.
+                     Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias do Sul - RS, 95084-370 Telefone: (54) 3028-9452
+                  </p>
+               </div>
             </div>
-        </div>
-    </div>
-
-
-
-    <!--VTEXWECODE-->
-
-
-    <div class="vtexwecode">
-        <div class="iconvtex"><img src="/icons/icon-footer-vtexbywecode.svg" alt=""></div>
-    </div>
-
-
-
-    <!--SCRIPT-->
-
-    <script>
-
-            /* SLIDES PRODUTOS */
-
-
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-
-
-            /* CARROUSEL*/
-
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            }
-
-            /* NAVBAR */
-
-            function openNav() {
-            document.getElementById("mySidepanel").style.width = "250px";
-            }
-
-            function closeNav() {
-            document.getElementById("mySidepanel").style.width = "0";
-            }
-
-            let answers=document.querySelectorAll(".accordion");
-                    answers.forEach((event)=>{
-                        event.addEventListener('click',()=>{
-                            if(event.classList.contains("active")){
-                                event.classList.remove("active");
-                            }
-                            else{
-                                event.classList.add("active");
-                            }
-                        })
-                    })
-        
-                   
-                   
-     </script>
-
-</body>
+         </div>
+      </div>
+      <!--VTEXWECODE-->
+      <div class="vtexwecode">
+         <div class="iconvtex"><img src="/icons/icon-footer-vtexbywecode.svg" alt=""></div>
+      </div>
+      <!--SCRIPT-->
+      <script>
+         /* SLIDES PRODUTOS */
+         
+         
+         let slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+         showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+         showSlides(slideIndex = n);
+         }
+         
+         
+         
+         /* CARROUSEL*/
+         
+         
+         function showSlides(n) {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+         }
+         
+         /* NAVBAR */
+         
+         function openNav() {
+         document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+         document.getElementById("mySidepanel").style.width = "0";
+         }
+         
+         let answers=document.querySelectorAll(".accordion");
+                 answers.forEach((event)=>{
+                     event.addEventListener('click',()=>{
+                         if(event.classList.contains("active")){
+                             event.classList.remove("active");
+                         }
+                         else{
+                             event.classList.add("active");
+                         }
+                     })
+                 })
+         
+                
+                
+      </script>
+   </body>
 </html>
-
